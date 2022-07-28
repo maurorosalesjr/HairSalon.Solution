@@ -11,7 +11,7 @@ namespace HairSalon.Controllers
   {
     private readonly HairSalonContext _db;
 
-    public ItemsController(HairSalonContext db)
+    public ClientsController(HairSalonContext db)
     {
       _db = db;
     }
@@ -38,7 +38,7 @@ namespace HairSalon.Controllers
 
     public ActionResult Details(int id)
     {
-      Client thisClient = _db.Clients.FirstOrDefault(Client => client.ClientId == id);
+      Client thisClient = _db.Clients.FirstOrDefault(client => client.ClientId == id);
       return View(thisClient);
     }
 
@@ -50,7 +50,7 @@ namespace HairSalon.Controllers
     }
 
     [HttpPost]
-    public ActionResult Edit(Item item)
+    public ActionResult Edit(Client client)
     {
       _db.Entry(client).State = EntityState.Modified;
       _db.SaveChanges();

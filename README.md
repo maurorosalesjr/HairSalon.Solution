@@ -21,9 +21,17 @@ Enables user to create a database that allows for the shop owner to add stylists
 
 * clone repo from https://github.com/maurorosalesjr/HairSalon
 * using MySQL import database structure from mauro_rosales Folder
+* create appsettings.json file to allow user to link MySQL (database) to this project 
+* add this code to the appsettings.json file and add the missing information
+{
+  "ConnectionStrings": {
+      "DefaultConnection": "Server=localhost;Port=[PORT];database=[DATABASE NAME];uid=[UID];pwd=[PASSWORD];"
+  }
+}
 * in terminal type : dotnet restore
 * in terminal type : dotnet build
 * in terminal type : dotnet run
+* copy/paste : http://localhost:5000 into browser window
 * use links to create and build out database
 
 

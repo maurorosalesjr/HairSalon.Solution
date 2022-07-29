@@ -9,6 +9,6 @@ namespace HairSalon.Models
         public int BestTime { get; set; }
 
         public int StylistId { get; set; }
-        public virtual Stylist Stylist { get; set; }
+        public virtual Stylist Stylists { get; set; }
     }
 }

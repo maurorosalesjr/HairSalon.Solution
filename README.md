@@ -28,6 +28,7 @@ Enables user to create a database that allows for the shop owner to add stylists
       "DefaultConnection": "Server=localhost;Port=[PORT];database=[DATABASE NAME];uid=[UID];pwd=[PASSWORD];"
   }
 }
+* make sure appsettings.json file is on the .gitignore file
 * in terminal type : dotnet restore
 * in terminal type : dotnet build
 * in terminal type : dotnet run
